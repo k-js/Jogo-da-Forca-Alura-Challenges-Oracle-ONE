@@ -1,0 +1,14 @@
+.btn-inicial {
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 317px;
+  height: 105px;
+  left: 562px;
+  top: 394px;
+  background: #0a3871;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  font-size: 30px;
+}
