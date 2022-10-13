@@ -1,9 +1,30 @@
 let palavras = ["ALURA", "ORACLE", "FORCA", "HTML", "JAVASCRIPT", "LOGICA"];
+let alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 let tabuleiro = document.getElementById("forca").getContext('2d');
+let inputPalavra = document.querySelector("#input-nova-palavra");
+let novaPalavraSecreta = document.getElementById('salvar-iniciar');
 let palavraSecreta = "";
-
-let letras = []
+let teclaAcionada = "";
+let resultado = "";
 let erros = 8
+let letras = []
+
+
+
+function addNovaPalavra(){
+
+	if(inputPalavra.value==""){
+		iniciarJogo();
+	} else if (palavras.includes(inputPalavra.value.toUpperCase())){
+		document.querySelector("#input-nova-palavra").value="";
+		iniciarJogo();
+	} else{
+        palavras.push(inputPalavra.value.toUpperCase());
+        document.querySelector("#input-nova-palavra").value="";
+        iniciarJogo();
+    }  			  
+}
+
 
 function escolherPalavraSecreta() {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)]
