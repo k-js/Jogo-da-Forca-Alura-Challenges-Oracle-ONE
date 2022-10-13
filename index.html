@@ -9,16 +9,22 @@
 </head>
 <body>
     <img src="./style/img/log Alura.svg" class="" alt="" srcset="">
+    
     <div id="div-desaparace" class="botoes-home">
-        <a href="#forca">
-            <input class="btn-inicial" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo()">
-        </a>
+        <input class="btn-inicial" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo()">
+        <input class="btn-palavra" type="submit" value="Adicionar nova palavra" onclick="novaPalavra()">
     </div>
     <div id="div-aparece-forca" class="canvas">
-        <canvas id="forca" height="860px" width="1200px"></canvas>
-        
-        <div class="sublinhado">
-        </div>
+        <canvas id="forca" height="400px" width="1200px"></canvas>
+        <div class="botoes-canvas">
+            <input class="btn-novo-jogo" type="submit" value="Novo jogo" onclick="iniciarJogo()">
+            <input class="btn-desistir" type="submit" value="Desistir" id="desistir" onclick="recarregar()">
+        </div>	
+    </div>
+
+
+    <div class="sublinhado">
+
     </div>
     <script type="text/javascript" src="./Js/forca.js"></script>
     <script type="text/javascript" src="./Js/canvas.js"></script>
