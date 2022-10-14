@@ -1,14 +1,92 @@
-.btn-inicial {
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-  position: absolute;
-  width: 317px;
-  height: 105px;
-  left: 562px;
-  top: 394px;
-  background: #0a3871;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  font-size: 30px;
+
+html{
+	background: #bbc9f0;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	min-width: 1224px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header img {
+	padding: 44px 0 31.09px 48px;
+
+}
+a{
+	cursor: pointer;
+}
+img:hover{
+	transform: scale(1.1);
+}
+#div-aparece-forca{
+	background: #f3f5fc;
+}
+
+#div-desaparece,.nova-palavra { 
+	padding-left: 40%;
+	padding-right: 40%;
+	padding-top: 2%;
+	padding-bottom: 2%;	
+}
+
+.botoes-canvas{
+	padding-left: 25%;
+}
+
+
+.btn-iniciar {
+	width:332px;
+	padding: 40px;
+	margin: 20px;
+	background: #0A3871;
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 20px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.btn-palavra {
+	width:332px;
+	padding: 40px;
+	margin: 20px;
+	border-color: #0A3871;
+	color: #0A3871;
+	font-size: 20px;
+	border-radius: 20px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.btn-salvar-iniciar,.btn-novo-jogo {
+	width:280px;
+	padding: 20px;
+	margin: 15px;
+	background: #0A3871;
+	color: white;
+	font-size: 15px;
+	border: none;
+	border-radius: 20px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.btn-cancela,.btn-desistir {
+	width:280px;
+	padding: 20px;
+	margin: 15px;
+	border-color: #0A3871;
+	color: #0A3871;
+	font-size: 15px;
+	border-radius: 20px;
+	transition: 1s all;
+	cursor: pointer;
+}
+input:hover {
+	transform: scale(1.03);
 }

@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/style.css" />
     <title>Jogo da dorca</title>
-</head>
-<body>
-    <img src="./style/img/log Alura.svg" class="" alt="" srcset="">
-    
-    <div id="div-desaparace" class="botoes-home">
-        <input class="btn-inicial" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo()">
-        <input class="btn-palavra" type="submit" value="Adicionar nova palavra" onclick="novaPalavra()">
+  </head>
+  <body>
+    <img src="./style/img/log Alura.svg" class="" alt="" srcset="" />
+
+    <div id="div-desaparece" class="botoes-home">
+      <input
+        class="btn-iniciar"
+        type="submit"
+        value="Começar a jogar"
+        id="iniciar-jogo"
+        onclick="iniciarJogo()"
+      />
+      <input
+        class="btn-palavra"
+        type="submit"
+        value="Adicionar nova palavra"
+        onclick="novaPalavra()"
+      />
     </div>
     <div id="div-aparece-forca" class="canvas">
-        <canvas id="forca" height="400px" width="800px"></canvas>
-        <div class="botoes-canvas">
-            <input class="btn-novo-jogo" type="submit" value="Novo jogo" onclick="iniciarJogo()">
-            <input class="btn-desistir" type="submit" value="Desistir" id="desistir" onclick="recarregar()">
-        </div>	
+      <canvas id="forca" height="400px" width="1200px"></canvas>
+      <div class="botoes-canvas">
+        <input
+          class="btn-novo-jogo"
+          type="submit"
+          value="Novo jogo"
+          onclick="iniciarJogo()"
+        />
+        <input
+          class="btn-desistir"
+          type="submit"
+          value="Desistir"
+          id="desistir"
+          onclick="recarregar()"
+        />
+      </div>
     </div>
     <div id="caixa-nova-palavra" class="nova-palavra">
-        <textarea id="input-nova-palavra" class="inputTexto" cols="40" rows="5" placeholder="Digite uma nova palavra"></textarea>
-        <div>
-            <input class="btn-salvar-iniciar" type="submit" value="Salvar e começar" id="salvar-iniciar" onclick="addNovaPalavra()">
-            <input class="btn-cancela" type="submit" value="Cancelar" id="cancelar" onclick="recarregar()">
-        </div>
+      <textarea
+        id="input-nova-palavra"
+        class="inputTexto"
+        cols="40"
+        rows="5"
+        placeholder="Digite uma nova palavra"
+      ></textarea>
+      <div>
+        <input
+          class="btn-salvar-iniciar"
+          type="submit"
+          value="Salvar e começar"
+          id="salvar-iniciar"
+          onclick="addNovaPalavra()"
+        />
+        <input
+          class="btn-cancela"
+          type="submit"
+          value="Cancelar"
+          id="cancelar"
+          onclick="recarregar()"
+        />
+      </div>
     </div>
-    <div class="sublinhado">
-
-    </div>
+    <div class="sublinhado"></div>
 
     <script type="text/javascript" src="./Js/forca.js"></script>
     <script type="text/javascript" src="./Js/canvas.js"></script>
-
-</body>
+  </body>
 </html>
