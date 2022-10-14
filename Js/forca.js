@@ -25,6 +25,38 @@ function addNovaPalavra(){
     }  			  
 }
 
+function adcionarletraIncorreta(){
+	erros -= 1;
+	
+	if(erros == 7){
+		desenhaForca();
+		} 
+	if(erros == 6){ 
+		desenhaCabeca()
+		}
+	if(erros == 5){ 
+		desenhaCorpo()
+		}	
+	if(erros == 4){ 
+		desenhaBracoD()
+		}
+	if(erros == 3){ 
+		desenhaBracoE()
+		}		
+	if(erros == 2){ 
+		desenhaPernaD()
+		}
+	if(erros == 1){ 
+		desenhaPernaE()
+		}
+	if(erros == 0){ 
+		cabecaEnforcada()
+		resultado = "PERDEU!!!"
+	}	
+}
+
+
+
 
 function escolherPalavraSecreta() {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)]
