@@ -1,9 +1,13 @@
-function desenharCanvas() {
-  tabuleiro.LineWidth = 8;
+function fucTab() {
   tabuleiro.LineCap = "round";
   tabuleiro.LineJoin = "round";
   tabuleiro.fillStyle = " #F3f5fc";
   tabuleiro.strokeStyle = "#0A3871";
+}
+
+function desenharCanvas() {
+  tabuleiro.LineWidth = 8;
+  fucTab()
 
   tabuleiro.fillRect(0, 0, 1200, 800);
   tabuleiro.beginPath();
@@ -15,10 +19,7 @@ function desenharCanvas() {
 
 function desenharLinhas() {
   tabuleiro.lineWidth = 3;
-  tabuleiro.lineCap = "round";
-  tabuleiro.lineJoin = "round";
-  tabuleiro.fillStyle = "#f3f5fc";
-  tabuleiro.strokeStyle = "#0a3871";
+  fucTab()
 
   let largura = 600 / palavraSecreta.length;
   for (let i = 0; i < palavraSecreta.length; i++) {
