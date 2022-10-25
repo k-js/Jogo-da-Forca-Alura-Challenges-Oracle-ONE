@@ -1,92 +1,110 @@
-
-html{
-	background: #bbc9f0;
-	font-family: 'Inter', sans-serif;
+html {
+  background: #bbc9f0;
+  font-family: "Inter", sans-serif;
 }
 body {
-	min-width: 1224px;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  min-width: 1224px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header img {
-	padding: 44px 0 31.09px 48px;
-
-}
-a{
-	cursor: pointer;
-}
-img:hover{
-	transform: scale(1.1);
-}
-#div-aparece-forca{
-	background: #f3f5fc;
+header {
+  margin: 12px 0 20px 60px;
+  display: flex;
 }
 
-#div-desaparece,.nova-palavra { 
-	padding-left: 40%;
-	padding-right: 40%;
-	padding-top: 2%;
-	padding-bottom: 2%;	
+.imgLogo {
+  padding: 44px 0 31.09px 48px;
+  margin-left: 70px;
+}
+.redes {
+  margin-left: 900px;
+  margin-top: 50px;
 }
 
-.botoes-canvas{
-	padding-left: 25%;
+a {
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.1);
 }
 
+#div-aparece-forca {
+  background: #f3f5fc;
+}
+
+#div-desaparece,
+.nova-palavra {
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.botoes-canvas {
+  padding-left: 25%;
+}
 
 .btn-iniciar {
-	width:332px;
-	padding: 40px;
-	margin: 20px;
-	background: #0A3871;
-	color: white;
-	font-size: 20px;
-	border: none;
-	border-radius: 20px;
-	transition: 1s all;
-	cursor: pointer;
+  width: 332px;
+  padding: 40px;
+  margin: 20px;
+  background: #0a3871;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
 .btn-palavra {
-	width:332px;
-	padding: 40px;
-	margin: 20px;
-	border-color: #0A3871;
-	color: #0A3871;
-	font-size: 20px;
-	border-radius: 20px;
-	transition: 1s all;
-	cursor: pointer;
+  width: 332px;
+  padding: 40px;
+  margin: 20px;
+  border-color: #0a3871;
+  color: #0a3871;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.btn-salvar-iniciar,.btn-novo-jogo {
-	width:280px;
-	padding: 20px;
-	margin: 15px;
-	background: #0A3871;
-	color: white;
-	font-size: 15px;
-	border: none;
-	border-radius: 20px;
-	transition: 1s all;
-	cursor: pointer;
+.btn-salvar-iniciar,
+.btn-novo-jogo {
+  width: 280px;
+  padding: 20px;
+  margin: 15px;
+  background: #0a3871;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.btn-cancela,.btn-desistir {
-	width:280px;
-	padding: 20px;
-	margin: 15px;
-	border-color: #0A3871;
-	color: #0A3871;
-	font-size: 15px;
-	border-radius: 20px;
-	transition: 1s all;
-	cursor: pointer;
+.btn-cancela,
+.btn-desistir {
+  width: 280px;
+  padding: 20px;
+  margin: 15px;
+  border-color: #0a3871;
+  color: #0a3871;
+  font-size: 15px;
+  border-radius: 20px;
+  transition: 1s all;
+  cursor: pointer;
 }
 input:hover {
-	transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+footer {
+  text-align: center;
+  margin-left: 90px;
+  font-size: 20px;
+  color: #0a3871;
 }

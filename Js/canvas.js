@@ -14,29 +14,28 @@ function desenharCanvas() {
 }
 
 function desenharLinhas() {
-    tabuleiro.lineWidth = 3;
-	tabuleiro.lineCap = "round";
-	tabuleiro.lineJoin = "round";
-	tabuleiro.fillStyle = "#f3f5fc";
-	tabuleiro.strokeStyle = "#0a3871";
-	
+  tabuleiro.lineWidth = 3;
+  tabuleiro.lineCap = "round";
+  tabuleiro.lineJoin = "round";
+  tabuleiro.fillStyle = "#f3f5fc";
+  tabuleiro.strokeStyle = "#0a3871";
 
-	let largura = 600/palavraSecreta.length;
-	for(let i = 0; i< palavraSecreta.length; i++){
-		tabuleiro.moveTo(420+(largura*i),300);
-		tabuleiro.lineTo(460+(largura*i),300);
-	}
-	tabuleiro.stroke();
-	tabuleiro.closePath();
+  let largura = 600 / palavraSecreta.length;
+  for (let i = 0; i < palavraSecreta.length; i++) {
+    tabuleiro.moveTo(420 + largura * i, 300);
+    tabuleiro.lineTo(460 + largura * i, 300);
+  }
+  tabuleiro.stroke();
+  tabuleiro.closePath();
 }
 
 function escreverLetraCorreta(letra) {
-    tabuleiro.font = "bold 52px Inter";
-	tabuleiro.lineCap = "round";
-	tabuleiro.fillStyle = "#0a3871";
-	tabuleiro.lineWidth = 6;
-	let largura = 600/palavraSecreta.length;
-	tabuleiro.fillText(palavraSecreta[letra],425 +(largura*letra),290);
+  tabuleiro.font = "bold 52px Inter";
+  tabuleiro.lineCap = "round";
+  tabuleiro.fillStyle = "#0a3871";
+  tabuleiro.lineWidth = 6;
+  let largura = 600 / palavraSecreta.length;
+  tabuleiro.fillText(palavraSecreta[letra], 425 + largura * letra, 290);
 }
 
 function escreverLetraIncorreta(letra) {
